@@ -1,0 +1,13 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1730184757
+icon.svg::CompressedTexture2D::8924188447834186020::1729784079::1729784084::1::::<><>::
+node_2d.tscn::PackedScene::8333679317662123477::1730122687::0::1::::<><>::uid://bc4i7uaghwrgq::::res://res/test_background.png<>uid://dtn8oflwwyq8k::::res://player.tscn
+player.gd::GDScript::-1::1730121243::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::8521715933520198348::1730122687::0::1::::<><>::res://player.gd<>uid://csj2u2o8jlk5n::::res://res/part_of_limb.png<>uid://dfig4ylblr7xl::::res://res/test_stickman.png<>uid://b62oiou4n3c2v::::res://res/sword.png<>uid://dmp0yjpx8pgsb::::res://res/body.png<>uid://yyi4wex83sw5::::res://res/head.png
+::res://res/::1730041072
+body.png::CompressedTexture2D::8034055121891396005::1729961443::1729961447::1::::<><>::
+head.png::CompressedTexture2D::1734616000158742306::1729945948::1729945951::1::::<><>::
+part_of_limb.png::CompressedTexture2D::6056496468609672121::1729961446::1729961447::1::::<><>::
+sword.png::CompressedTexture2D::4618878127640782339::1730041071::1730041072::1::::<><>::
+test_background.png::CompressedTexture2D::2587209257933842048::1730031216::1730031217::1::::<><>::
+test_stickman.png::CompressedTexture2D::7527138658895877169::1729943874::1729943875::1::::<><>::

@@ -1,0 +1,7 @@
+Bone2D
+AnimationPlayer
+Skeleton2D
+CollisionShape2D
+CharacterBody2D
+Camera2D
+StaticBody2D
