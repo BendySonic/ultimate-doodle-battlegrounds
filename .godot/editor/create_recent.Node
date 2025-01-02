@@ -1,7 +1,11 @@
+CollisionShape2D
+Area2D
+AnimatedSprite2D
+CharacterBody2D
+Node2D
+Node
 Bone2D
 AnimationPlayer
 Skeleton2D
-CollisionShape2D
-CharacterBody2D
 Camera2D
 StaticBody2D

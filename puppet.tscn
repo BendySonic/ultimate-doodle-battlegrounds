@@ -1,0 +1,85 @@
+[gd_scene load_steps=11 format=3 uid="uid://x7cynafk35yf"]
+
+[ext_resource type="Texture2D" uid="uid://i3qockkl5f35" path="res://res/animations/puppet.png" id="1_eb422"]
+[ext_resource type="Script" path="res://puppet.gd" id="1_x1k0k"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o13fo"]
+size = Vector2(120, 120)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nsnxl"]
+atlas = ExtResource("1_eb422")
+region = Rect2(0, 0, 400, 400)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hqktw"]
+atlas = ExtResource("1_eb422")
+region = Rect2(400, 0, 400, 400)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2cxvn"]
+atlas = ExtResource("1_eb422")
+region = Rect2(0, 0, 400, 400)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qogck"]
+atlas = ExtResource("1_eb422")
+region = Rect2(800, 0, 400, 400)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3cnt1"]
+atlas = ExtResource("1_eb422")
+region = Rect2(0, 0, 400, 400)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ta5pt"]
+atlas = ExtResource("1_eb422")
+region = Rect2(1200, 0, 400, 400)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pp1f0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nsnxl")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 2.0,
+"texture": SubResource("AtlasTexture_hqktw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2cxvn")
+}],
+"loop": false,
+"name": &"punch1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 2.0,
+"texture": SubResource("AtlasTexture_qogck")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3cnt1")
+}],
+"loop": false,
+"name": &"punch2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ta5pt")
+}],
+"loop": true,
+"name": &"punch3",
+"speed": 5.0
+}]
+
+[node name="Puppet" type="CharacterBody2D" node_paths=PackedStringArray("animation")]
+collision_layer = 4
+script = ExtResource("1_x1k0k")
+animation = NodePath("AnimatedSprite2D")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 40)
+shape = SubResource("RectangleShape2D_o13fo")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_pp1f0")
+animation = &"punch3"

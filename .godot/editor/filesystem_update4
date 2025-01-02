@@ -1,3 +1,6 @@
 res://node_2d.tscn
 res://player.tscn
 res://player.gd
+res://puppet.tscn
+res://punch_area_2d.gd
+res://puppet.gd
